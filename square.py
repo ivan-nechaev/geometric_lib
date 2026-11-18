@@ -4,6 +4,8 @@ def area(a):
     Пример:
         area(3)
     """
+    if a < 0:
+        raise ValueError("Сторона должна быть неотрицательной")
     return a * a
 
 
@@ -13,4 +15,6 @@ def perimeter(a):
     Пример:
         perimeter(3)
     """
+    if a < 0:
+        raise ValueError("Сторона должна быть неотрицательной")
     return 4 * a

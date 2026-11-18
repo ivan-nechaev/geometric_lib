@@ -7,6 +7,8 @@ def area(r):
     Пример:
         area(3)
     """
+    if r < 0:
+        raise ValueError("Радиус должен быть неотрицательным")
     return math.pi * r * r
 
 
@@ -16,4 +18,6 @@ def perimeter(r):
     Пример:
         perimeter(3)
     """
+    if r < 0:
+        raise ValueError("Радиус должен быть неотрицательным")
     return 2 * math.pi * r
